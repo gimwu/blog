@@ -1,15 +1,7 @@
 package main
 
-import (
-	"blog/utils"
-	"github.com/gin-gonic/gin"
-)
+import "blog/bootstrap"
 
 func main() {
-	router := gin.Default()
-	router.Use(utils.LoggerWrite())
-	router.GET("/ping", func(context *gin.Context) {
-		context.String(200, "pong")
-	})
-	router.Run(":8080")
+	bootstrap.Init()
 }

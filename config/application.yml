@@ -1,3 +1,10 @@
 gin:
   log:
     filepath: "./log/"
+mysql:
+  path: 124.221.132.236:3306
+  db-name: gimmick
+  username: gimmick
+  password: "Gbdv470365234"
+  max-idle-conns: 50
+  max-open-conns: 100
